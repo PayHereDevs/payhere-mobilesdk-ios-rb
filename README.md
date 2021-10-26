@@ -33,15 +33,14 @@ The Original SDK is linked using dynamic Frameworks. You can use the __RB__ Edit
 ```bash
 $ gem install cocoapods
 ```
-To integrate PayHere into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate PayHere RB Edition into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 # use_frameworks! # Comment this line - rb version doesn't support use_frameworks
 
 target '<Your Target Name>' do
-    pod 'payHereSDK'
+    pod 'payHereSDK', :git => 'https://github.com/PayHereDevs/payhere-mobilesdk-ios-rb.git'
 end
 ```
 Then, run the following command:

@@ -11,7 +11,7 @@ PayHere Mobile SDK for iOS allows you to accept payments seamlessly within your 
 
 The __RB__ (Resource Bundle) Edition is different from the [Original iOS SDK](https://github.com/PayHereLK/payhere-mobilesdk-ios) because it __must__ be linked statically through Cocoapods. 
 
-The Original SDK is linked using dynamic Frameworks. you can use the __RB__ Edition with technologies like React Native, since they don't support dynamic frameworks.
+The Original SDK is linked using dynamic Frameworks. You can use the __RB__ Edition with technologies like React Native, since they don't support dynamic frameworks.
 
 ## Contents
 -  [Requirements](#Requirements)

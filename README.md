@@ -31,7 +31,7 @@ To integrate PayHere into your Xcode project using CocoaPods, specify it in your
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
-# use_frameworks! # Comment or remove this line.
+# use_frameworks! # Comment this line - rb version doesn't support use_frameworks
 
 target '<Your Target Name>' do
     pod 'payHereSDK'

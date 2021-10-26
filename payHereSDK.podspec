@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '11.0'
 s.name = "payHereSDK"
-s.summary = "Mobile SDK for payHere"
+s.summary = "Resource Bundle version of PayHere iOS Mobile SDK"
 s.requires_arc = true
 
 # 2
-s.version = "2.2.2"
+s.version = "2.2.3"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -20,7 +20,7 @@ s.author = { "PayHere" => "support@payhere.lk" }
 s.homepage = "https://www.payhere.lk/"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/PayHereLK/payhere-mobilesdk-ios.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/PayHereDevs/payhere-mobilesdk-ios-rb.git", :tag => "#{s.version}"}
 # s.resource_bundle = { 'payHereSDK' => 'payHereSDK/Sources/**/*.storyboard' }
 
 

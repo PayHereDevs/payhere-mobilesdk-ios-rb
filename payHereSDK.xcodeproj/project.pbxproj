@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64EAC231A434809BE20F49B6 /* Pods_payHereSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B6187BCC10F8202F09F30B /* Pods_payHereSDK.framework */; };
 		8A1FF74B206254DF00924B21 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A1FF74A206254DF00924B21 /* README.md */; };
 		8A74D7E320528D9800CF10AB /* payHereSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A74D7E120528D9800CF10AB /* payHereSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A74D7EE20528E3900CF10AB /* PHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A74D7E920528E3800CF10AB /* PHViewController.swift */; };
@@ -22,7 +23,7 @@
 		8A74D7FF20528E7100CF10AB /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A74D7FE20528E7100CF10AB /* Extention.swift */; };
 		8AD11E6320612739002E4F82 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8AD11E6120612739002E4F82 /* LICENSE */; };
 		8AD11E6420612739002E4F82 /* payHereSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8AD11E6220612739002E4F82 /* payHereSDK.podspec */; };
-		C3ECA3CC61479DD760DF138C /* Pods_payHereSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10E7597F9AFFB0D66AE7793 /* Pods_payHereSDK.framework */; };
+		C63F09D62CF87E0CD3B7A7D0 /* Pods_demoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF600904C61D5F8F405A099D /* Pods_demoapp.framework */; };
 		C72750CB23A75AAD00AE9037 /* PayHere.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72750CA23A75AAD00AE9037 /* PayHere.storyboard */; };
 		C72750CD23A75B8A00AE9037 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72750CC23A75B8A00AE9037 /* image.xcassets */; };
 		C746D510234C9A7300F9D06F /* PHPrecentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C746D50F234C9A7300F9D06F /* PHPrecentController.swift */; };
@@ -46,7 +47,6 @@
 		C7A7DA3323C5D6F90029210E /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7DA3123C5D6F90029210E /* HeaderCollectionReusableView.swift */; };
 		C7A7DA3423C5D6F90029210E /* HeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A7DA3223C5D6F90029210E /* HeaderCollectionReusableView.xib */; };
 		C7DF820324E6846300241DA6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF81FD24E65DD500241DA6 /* WebKit.framework */; };
-		D68AD170D5E2B0BDB07655F7 /* Pods_demoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C73F5CCE9DE42DB20A5A09 /* Pods_demoapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +94,7 @@
 		8A74D7FE20528E7100CF10AB /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		8AD11E6120612739002E4F82 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8AD11E6220612739002E4F82 /* payHereSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = payHereSDK.podspec; sourceTree = "<group>"; };
-		C5C73F5CCE9DE42DB20A5A09 /* Pods_demoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF600904C61D5F8F405A099D /* Pods_demoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72750CA23A75AAD00AE9037 /* PayHere.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayHere.storyboard; sourceTree = "<group>"; };
 		C72750CC23A75B8A00AE9037 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		C746D50F234C9A7300F9D06F /* PHPrecentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPrecentController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		C7A7DA3123C5D6F90029210E /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		C7A7DA3223C5D6F90029210E /* HeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		C7DF81FD24E65DD500241DA6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		D10E7597F9AFFB0D66AE7793 /* Pods_payHereSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_payHereSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B6187BCC10F8202F09F30B /* Pods_payHereSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_payHereSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98AA3326CB2BEE8C4106D35 /* Pods-payHereSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-payHereSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-payHereSDK/Pods-payHereSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DF820324E6846300241DA6 /* WebKit.framework in Frameworks */,
-				C3ECA3CC61479DD760DF138C /* Pods_payHereSDK.framework in Frameworks */,
+				64EAC231A434809BE20F49B6 /* Pods_payHereSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C793DE7123C717F000666008 /* payHereSDK.framework in Frameworks */,
-				D68AD170D5E2B0BDB07655F7 /* Pods_demoapp.framework in Frameworks */,
+				C63F09D62CF87E0CD3B7A7D0 /* Pods_demoapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				C7DF81FD24E65DD500241DA6 /* WebKit.framework */,
-				D10E7597F9AFFB0D66AE7793 /* Pods_payHereSDK.framework */,
-				C5C73F5CCE9DE42DB20A5A09 /* Pods_demoapp.framework */,
+				BF600904C61D5F8F405A099D /* Pods_demoapp.framework */,
+				E8B6187BCC10F8202F09F30B /* Pods_payHereSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				C793DE5A23C717C900666008 /* Frameworks */,
 				C793DE5B23C717C900666008 /* Resources */,
 				C793DE7523C717F000666008 /* Embed Frameworks */,
-				9708F5586E91EA49649DDB91 /* [CP] Embed Pods Frameworks */,
+				E808CAF4FAC1C5B1EA5BC149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,7 +421,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9708F5586E91EA49649DDB91 /* [CP] Embed Pods Frameworks */ = {
+		E808CAF4FAC1C5B1EA5BC149 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -720,7 +720,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = lk.payhere.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.payhere.demo-rb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -746,7 +746,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = lk.payhere.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.payhere.demo-rb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

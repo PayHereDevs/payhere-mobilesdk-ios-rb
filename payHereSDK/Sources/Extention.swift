@@ -40,6 +40,16 @@ extension Bundle{
                 return prodBundle
             }
         }
+        print("🟡 PayHere iOS Crash: Could not find the PayHere Resource Bundle in the App Binary.")
+        print("")
+        print("Reason: The file, 'payHereSDK.bundle' was not statically linked into your App Binary.")
+        print("Troubleshooting: Please check the following.")
+        print("\t1. Make sure that in your Podfile you have removed the 'use_frameworks!' line.")
+        print("\t2. Run the `pod install` comamnd in the Xcode project directory.")
+        print("\t3. If other build errors occur when you comment out use_frameworks!, then you probably want the Original iOS SDK and not this Resource Bundle (RE) Edition.")
+        print("")
+        print("Original iOS SDK: https://github.com/PayHereLK/payhere-mobilesdk-ios")
+        print("")
         fatalError("PayHere Bundle could not be found!")
     }
     

@@ -1,4 +1,4 @@
-# PayHere Mobile SDK for iOS
+# PayHere Mobile SDK for iOS (⚙️ RB Edition)
 <p>
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift5-f48041.svg?style=flat"></a>
 <a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat"></a>
@@ -6,6 +6,12 @@
 </p>
 
 PayHere Mobile SDK for iOS allows you to accept payments seamlessly within your iOS app, without redirecting your app user to the web browser.
+
+## ⚠️ Important
+
+The __RB__ (Resource Bundle) Edition is different from the [Original iOS SDK](https://github.com/PayHereLK/payhere-mobilesdk-ios) because it __must__ be linked statically through Cocoapods. 
+
+The Original SDK is linked using dynamic Frameworks. you can use the __RB__ Edition with technologies like React Native, since they don't support dynamic frameworks.
 
 ## Contents
 -  [Requirements](#Requirements)
@@ -16,6 +22,7 @@ PayHere Mobile SDK for iOS allows you to accept payments seamlessly within your 
 - iOS 11.0+
 - Xcode 11.0+
 - Swift 5.0+
+- An iOS project using Static Libraries
 
 ## Installation
 

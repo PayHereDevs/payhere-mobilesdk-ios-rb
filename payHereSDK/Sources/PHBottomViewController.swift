@@ -35,6 +35,7 @@ internal class PHBottomViewController: UIViewController {
     @IBOutlet var lblSecureWindow: UILabel!
     @IBOutlet weak var checkMark: WVCheckMark!
     @IBOutlet var lblPaymentStatus: UILabel!
+    @IBOutlet weak var lblBottomMessage: UILabel!
     
     
     internal var initialRequest : PHInitialRequest?
@@ -127,7 +128,7 @@ internal class PHBottomViewController: UIViewController {
         
         
         //MARK: Start PreApproval Process
-        if(self.apiMethod == .PreApproval || self.apiMethod == .Recurrence){
+        if(self.apiMethod == .PreApproval || self.apiMethod == .Recurrence || self.apiMethod == .Authorize){
             self.collectionView.isHidden = true
             self.progressBar.isHidden = true
             self.selectedPaymentOption = PaymentOption(name: "Visa", image: getImage(withImageName: "visa"), optionValue: "VISA")
@@ -306,6 +307,10 @@ internal class PHBottomViewController: UIViewController {
             initialSubmitRequest.duration = durationString
             initialSubmitRequest.auto = true
         }
+        
+        
+        
+        initialSubmitRequest.authorize = phInitialRequest.isHoldOnCardEnabled
         
         
         self.apiMethod  = phInitialRequest.api
@@ -669,7 +674,7 @@ internal class PHBottomViewController: UIViewController {
             
         }else{
             
-            if(lastResponse.getStatusState() == StatusResponse.Status.SUCCESS || lastResponse.getStatusState() == StatusResponse.Status.FAILED){
+            if(lastResponse.getStatusState() == StatusResponse.Status.SUCCESS || lastResponse.getStatusState() == StatusResponse.Status.FAILED || lastResponse.getStatusState() == StatusResponse.Status.AUTHORIZED){
                 delegate?.onResponseReceived(response: PHResponse(status: self.getStatusFromResponse(lastResponse: lastResponse), message: "Payment completed. Check response data", data: lastResponse))
             }
             
@@ -697,6 +702,13 @@ internal class PHBottomViewController: UIViewController {
             checkMark.start()
             self.lblPaymentStatus.text = "Payment Approved"
             self.lblPaymentID.text = String(format : "Payment ID #%.0f",lastResponse.paymentNo ?? 0.0)
+            self.lblBottomMessage.text = "You'll receive and Email Receipt with this Payment ID for further reference"
+        }else if(lastResponse.getStatusState() == StatusResponse.Status.AUTHORIZED){
+            checkMark.clear()
+            checkMark.start()
+            self.lblPaymentStatus.text = "Payment Authorized"
+            self.lblBottomMessage.text = "You'll be charged once the merchant process this payment"
+            self.lblPaymentID.text = String(format : lastResponse.message ?? "")
         }else{
             checkMark.clear()
             checkMark.startX()

@@ -8,7 +8,7 @@ s.summary = "Resource Bundle version of PayHere iOS Mobile SDK"
 s.requires_arc = true
 
 # 2
-s.version = "3.0.3"
+s.version = "3.0.4"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
